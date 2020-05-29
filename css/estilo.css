@@ -14,13 +14,15 @@ main {
 }
 
 #nav-mobile {
-  padding-left: 140px;
+  padding-left: 165px;
   margin: 5px;
+  font-family: "Varela Round", sans-serif;
 }
 
 #nav-mobile2 {
-  padding-right: 140px;
+  padding-right: 100px;
   margin: 5px;
+  font-family: "Varela Round", sans-serif;
 }
 
 nav div {
@@ -59,39 +61,36 @@ footer {
   text-align: left;
   float: left;
   margin-left: 100px;
+  font-family: "Varela Round", sans-serif;
+}
+
+#categoria a:hover {
+  text-decoration: underline;
 }
 
 #contato {
-  text-align: center;
+  text-align: justify;
   float: left;
-  margin-left: 380px;
+  margin-left: 260px;
+  font-family: "Varela Round", sans-serif;
+}
+
+#contato a:hover {
+  text-decoration: underline;
 }
 
 #redes {
   height: 180px;
   text-align: right;
   margin-right: 100px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 10px;
 }
 
-#nav-mobile li{
-  padding-right:40px;
-  padding-left:70px;
+#nav-mobile li a {
+  font-size: 13pt;
 }
 
-#nav-mobile2 li{
-  padding-right:50px;
-
+#nav-mobile2 li a {
+  font-size: 13pt;
 }
-
-#nav-mobile li a{
-  font-size: 14pt;
-}
-
-#nav-mobile2 li a{
-  font-size: 14pt;
-}
-
-#fale{
-  padding-right: 30px;
-}
-
