@@ -60,7 +60,7 @@ nav div img {
 
 #categoria {
   font-family: "Varela Round", sans-serif;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 #categoria a:hover {
@@ -69,7 +69,7 @@ nav div img {
 
 #contato {
   font-family: "Varela Round", sans-serif;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 #contato a:hover {
@@ -78,7 +78,7 @@ nav div img {
 
 #redes {
   font-family: "Varela Round", sans-serif;
-  text-align: right;
+  /* text-align: right; */
 }
 
 #nav-mobile li a {
