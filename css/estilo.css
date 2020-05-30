@@ -86,3 +86,13 @@ nav div img {
 #nav-mobile2 li a {
   font-size: 13pt;
 }
+
+#mobile-demo li a{
+  opacity: 0.7;
+}
+
+#mobile-demo li a:hover{
+  font-size:15pt;
+  opacity: 1;
+}
+
