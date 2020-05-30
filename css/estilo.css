@@ -51,16 +51,14 @@ nav div img {
   text-align: center;
 }
 
-footer {
+#footer22 {
   background-color: black;
   padding-top: 10px;
   color: whitesmoke;
+  text-align: center;
 }
 
 #categoria {
-  text-align: left;
-  float: left;
-  margin-left: 100px;
   font-family: "Varela Round", sans-serif;
 }
 
@@ -69,9 +67,6 @@ footer {
 }
 
 #contato {
-  text-align: justify;
-  float: left;
-  margin-left: 260px;
   font-family: "Varela Round", sans-serif;
 }
 
@@ -80,9 +75,6 @@ footer {
 }
 
 #redes {
-  height: 180px;
-  text-align: right;
-  margin-right: 100px;
   font-family: "Varela Round", sans-serif;
   font-size: 10px;
 }
