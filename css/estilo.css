@@ -98,3 +98,11 @@ nav div img {
   opacity: 1;
 }
 
+#nav-mobile li a:hover {
+  font-size: 15pt;
+}
+
+#nav-mobile2 li a:hover {
+  font-size: 15pt;
+}
+
