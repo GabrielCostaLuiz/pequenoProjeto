@@ -27,6 +27,7 @@ main {
 
 nav div {
   padding-bottom: 79px;
+  /* padding-top: 10px; */
 }
 
 nav div img {
@@ -104,4 +105,3 @@ nav div img {
 #nav-mobile2 li a:hover {
   font-size: 15pt;
 }
-
