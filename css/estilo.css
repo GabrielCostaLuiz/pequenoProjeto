@@ -113,9 +113,12 @@ nav div img {
 #card {
   width: 300px;
   display: inline-block;
-  margin-left: 110px;
   box-shadow: 0 0 0 0 transparent;
   border: none;
+  width: auto;
+  padding-right:50px;
+  padding-left:50px;
+  padding-bottom:30px;
 }
 
 #letra {
@@ -141,10 +144,10 @@ nav div img {
   font-size: 14pt;
 }
 
-#exampleModal {
+/* #exampleModal {
   width: 600px;
   height: auto;
-}
+} */
 
 #desconto {
   font-family: "Montserrat", sans-serif;
@@ -161,4 +164,8 @@ nav div img {
 #letra5,
 #letra6 {
   font-family: "Montserrat", sans-serif;
+}
+
+#cards{
+text-align: center;
 }
