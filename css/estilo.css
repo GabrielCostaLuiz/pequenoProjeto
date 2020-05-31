@@ -83,10 +83,14 @@ nav div img {
 
 #nav-mobile li a {
   font-size: 13pt;
+  text-decoration: none;
+  color: white;
 }
 
 #nav-mobile2 li a {
   font-size: 13pt;
+  text-decoration: none;
+  color: white;
 }
 
 #mobile-demo li a {
