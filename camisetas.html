@@ -7,14 +7,7 @@
 
     <!-- Link do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-
-     <!-- bootstrap -->
-     <link
-     rel="stylesheet"
-     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-     crossorigin="anonymous"
-   />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!--Import Google Icon Font-->
     <link
@@ -35,7 +28,7 @@
   <body>
     <header>
       <!-- ########## Início da barra de navegação ########## -->
-      <nav style="height: auto; margin-bottom: 15px;">
+      <nav style="height: auto; margin-bottom: 15px; " >
         <div class="nav-wrapper black">
           <a href="index.html" class="brand-logo center" id="logo"
             ><img src="img/logo3.png" alt="logo"
@@ -43,12 +36,12 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <ul id="nav-mobile" class="left hide-on-med-and-down"  >
             <li><a href="camisetas.html">Camisetas</a></li>
             <li><a href="diversos.html">Diversos</a></li>
           </ul>
-          <ul id="nav-mobile2" class="right hide-on-med-and-down">
-            <li><a href="misterioso.html">Pacote Misterioso</a></li>
+          <ul id="nav-mobile2" class="right hide-on-med-and-down"  >
+            <li><a href="misterioso.html" >Pacote Misterioso</a></li>
             <li><a href="fale.html">Fale Conosco</a></li>
           </ul>
           <ul class="sidenav" id="mobile-demo">
@@ -72,45 +65,37 @@
           <img class="activator" src="img/foto.jfif" >
         </div>
         <div class="card-content" >
-          <span class="card-title activator" ><a href="camisetas.html" id="letra" >Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
-          <p id="letra2">Camiseta do Brasil - Masculina</p>
+          <span class="card-title activator" ><a href="camisetas.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2">[M] Seleção Brasileira</p>
         </div>
         <div class="card-reveal" style="background-color: grey;">
-          <span class="card-title grey-text text-darken-4" id="letra3">Card Title<i class="material-icons right">close</i></span>
-          <p id="letra4">Here is some more information about this product that is only revealed once clicked on.</p>
+          <span class="card-title grey-text text-darken-4" id="letra3">Seleção Brasileira<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra5">Tamanho: M </p>
+          <p id="letra6">Status: Disponível </p><br/>
          
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Comprar
-           </button>
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
 
         </div>
         <div style="text-align: left; margin-left: 25px;">
         <p id="preço">R$ 209,99</p>
-        <p id="desconto">R$ 100,99</p>
+        <p id="desconto"><b>R$ 100,99</b></p>
         </div>
       </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirmação de Compra </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Deseja realizar a compra desse produto ?
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right: 10px;">Não</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alerta()">Sim</button>
-              </div>
-            </div>
-          </div>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+
       
     </main>
 
@@ -193,11 +178,6 @@
   $('#myInput').trigger('focus')
 })
     </script>
-
-    <!-- Scripts JS de origem boostrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
 
