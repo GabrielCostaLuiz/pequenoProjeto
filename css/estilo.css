@@ -86,6 +86,7 @@ nav div img {
 
 #nav-mobile2 li a {
   font-size: 13pt;
+
 }
 
 #mobile-demo li a {
@@ -138,8 +139,5 @@ text-decoration: none;
   font-size: 14pt;
 }
 
-#exampleModal{
-width: 600px;
-height: auto;
-}
+
 
