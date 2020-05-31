@@ -27,7 +27,7 @@ main {
 
 nav div {
   padding-bottom: 79px;
-  /* padding-top: 10px; */
+  /* padding-top: ; */
 }
 
 nav div img {
@@ -104,4 +104,40 @@ nav div img {
 
 #nav-mobile2 li a:hover {
   font-size: 15pt;
+}
+
+#card {
+  width: 300px;
+  display: inline-block;
+  margin-left: 110px;
+  box-shadow: 0 0 0 0 transparent;
+  border: none;
+}
+
+#letra {
+  font: 400 13px/16px "Poppins", sans-serif;
+  font-size: 14px;
+  color: #898b9c;
+}
+
+#desconto {
+  font-size: 15pt;
+}
+
+#preço {
+  color: #898b9c;
+  text-decoration: line-through;
+}
+
+#letra {
+  text-decoration: none;
+}
+
+#letra2 {
+  font-size: 14pt;
+}
+
+#exampleModal {
+  width: 600px;
+  height: auto;
 }
