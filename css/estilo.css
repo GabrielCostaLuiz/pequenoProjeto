@@ -110,15 +110,16 @@ nav div img {
   font-size: 15pt;
 }
 
-#card {
-  width: 300px;
+#card1,
+#card2,
+#card3 {
+  width: 45%;
   display: inline-block;
   box-shadow: 0 0 0 0 transparent;
   border: none;
-  width: auto;
-  padding-right:50px;
-  padding-left:50px;
-  padding-bottom:30px;
+  padding-right: 50px;
+  padding-left: 200px;
+  padding-bottom: 30px;
 }
 
 #letra {
@@ -157,6 +158,10 @@ nav div img {
   font-family: "Montserrat", sans-serif;
 }
 
+#letra {
+  text-align: center;
+}
+
 #letra,
 #letra2,
 #letra3,
@@ -166,6 +171,21 @@ nav div img {
   font-family: "Montserrat", sans-serif;
 }
 
-#cards{
-text-align: center;
+.card {
+  padding: 75px;
+}
+
+#card1 img {
+  width: auto;
+  height: 200px;
+}
+
+#card2 img {
+  width: auto;
+  height: 200px;
+}
+
+#card3 img {
+  width: auto;
+  height: 200px;
 }
