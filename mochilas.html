@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe Nerd</title>
+
+    <!-- Link do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/estilo.css" />
+   
+    <script src="js/alert.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- ########## Início da barra de navegação ########## -->
+      <nav style="height: auto; margin-bottom: 15px; " >
+        <div class="nav-wrapper black">
+          <a href="index.html" class="brand-logo center" id="logo"
+            ><img src="img/logo3.png" alt="logo"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="left hide-on-med-and-down"  >
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="diversos.html">Diversos</a></li>
+          </ul>
+          <ul id="nav-mobile2" class="right hide-on-med-and-down"  >
+            <li><a href="misterioso.html" >Pacote Misterioso</a></li>
+            <li><a href="fale.html">Fale Conosco</a></li>
+          </ul>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="diversos.html">Diversos</a></li>
+            <li><a href="misterioso.html">Pacote Misterioso</a></li>
+            <li><a href="fale.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ########## Fim da barra de navegação ########## -->
+
+      <!-- ########## Início do carousel ########## -->
+
+      <!-- ########## Fim do carousel ########## -->
+    </header>
+
+    <main>
+      <div class="collection" id="filtro" >
+        <hr>
+        <span id="letrafiltro">Filtro</span>
+        <hr>
+        <a href="mochilas.html" class="collection-item" >Mochilas</a>
+        <hr>
+        <a href="quadros.html" class="collection-item" >Quadros</a>
+        <hr>
+        <a href="funkos.html" class="collection-item" >Funkos</a>
+        <hr>
+        <a href="mangas.html" class="collection-item" style="padding-left: 11px;" >Mangas</a>
+        <hr>
+        <a href="diversos.html" class="collection-item" style="padding-left: 11px;" >Geral</a>
+        <hr>
+      </div>
+      
+      <!-- ############# Inicio dos CARDS ##################### -->
+      <div id="cards">
+        <!-- ############# Inicio do CARD 1 ##################### -->
+      <div class="card" id="cardmochila">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg" >
+          <img class="activator" src="img/mochila1.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2" style="text-align: left;">Mochila da Minnie</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Mochila da Minnie<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 1 ##################### -->
+
+
+
+      <!-- ############# Inicio do CARD 2 ##################### -->
+      <div class="card" id="cardmochila">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+          <img class="activator" style="margin-left: 30px;" src="img/mochila2.jpg" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2" style="text-align: left;">Mochila do Pokemon</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3" >Mochila do Pokemon<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+      
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+      
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 2 ##################### -->
+
+
+
+
+      <!-- ############# Inicio do CARD 3 ##################### -->
+      <div class="card" id="cardmochila" style="padding-right:30px ;">
+        <div class="card-image waves-effect waves-block waves-light" id="cardimg">
+          <img class="activator" style="width: 289px; height: 200px;" src="img/mochila3.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;" ><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2">Mochila Liga da Justiça</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Mochila da Liga da Justiça<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 3 ##################### -->
+
+
+    </div>
+     <!-- ############# Fim dos CARDS ##################### -->
+
+    </main>
+
+    <footer class="page-footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12" id="categoria">
+            <h5 class="white-text">Categorias</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="camisetas.html"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="diversos.html"
+                  >Diversos</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="misterioso.html"
+                  >Pacote Misterioso</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="fale.html"
+                  >Fale Conosco</a
+                >
+            </ul>
+          </div>
+
+          <div class="col l4 s12" id="contato">
+            <h5>Contato</h5>
+            <p>WhatsApp: (11) 97788 - 2000</p>
+            <p>Telefone: 2519 - 4062</p>
+            <a href="mailto:contato@classenerd.com.br"> contato@classenerd.com.br</a>
+          </div>
+
+          <div class="col l4 s12" id="redes">
+            <h5>Redes Sociais</h5>
+            <ul>
+              <li>
+                <a href="http://www.facebook.com" target="_blank">
+                  <img src="img/facebook.png" alt="Rede social facebok" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com" target="_blank">
+                  <img src="img/twitter.png" alt="Rede social twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.instagram.com" target="_blank">
+                  <img src="img/instagram.png" alt="Rede social instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+
+    <script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+    </script>
+  </body>
+</html>
+

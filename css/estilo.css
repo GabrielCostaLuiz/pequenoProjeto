@@ -152,11 +152,13 @@ nav div img {
 
 #desconto {
   font-size: 15pt;
+  text-align: left;
 }
 
 #preço {
   color: #898b9c;
   text-decoration: line-through;
+  text-align: left;
 }
 
 #letra {
@@ -204,10 +206,16 @@ nav div img {
 
 #letrafiltro {
   font-weight: bold;
+<<<<<<< HEAD
   margin-left: 24px;
   padding-bottom: 10px;
+=======
+  padding-bottom:10px ;
+>>>>>>> 2151e7d581482b90a4614deaec8d8a58f02adfb1
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;
+
+
 }
 
 hr {
@@ -222,6 +230,7 @@ hr {
   color: black;
   border-left: 2px solid black;
   border-right: 2px solid black;
+  text-align: center;
 }
 
 #caixaM {
