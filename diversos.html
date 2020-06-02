@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classe Nerd</title>
 
+    <!-- Icon da barra de endereço -->
+    <link rel="icon" type="imagem/png" href="./img/logo3.png" />
+
     <!-- Link do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!--Import Google Icon Font-->
     <link
@@ -21,11 +25,13 @@
     />
 
     <link rel="stylesheet" href="css/estilo.css" />
+   
+    <script src="js/alert.js"></script>
   </head>
   <body>
     <header>
       <!-- ########## Início da barra de navegação ########## -->
-      <nav style="height: auto;">
+      <nav style="height: auto; margin-bottom: 15px; " >
         <div class="nav-wrapper black">
           <a href="index.html" class="brand-logo center" id="logo"
             ><img src="img/logo3.png" alt="logo"
@@ -33,12 +39,12 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <ul id="nav-mobile" class="left hide-on-med-and-down"  >
             <li><a href="camisetas.html">Camisetas</a></li>
             <li><a href="diversos.html">Diversos</a></li>
           </ul>
-          <ul id="nav-mobile2" class="right hide-on-med-and-down">
-            <li><a href="misterioso.html">Pacote Misterioso</a></li>
+          <ul id="nav-mobile2" class="right hide-on-med-and-down"  >
+            <li><a href="misterioso.html" >Pacote Misterioso</a></li>
             <li><a href="fale.html">Fale Conosco</a></li>
           </ul>
           <ul class="sidenav" id="mobile-demo">
@@ -56,7 +62,514 @@
       <!-- ########## Fim do carousel ########## -->
     </header>
 
-    <main></main>
+    <main>
+      <div class="collection" id="filtro" >
+        <hr>
+        <span id="letrafiltro">Filtro</span>
+        <hr>
+        <a href="#cardmochila" class="collection-item" >Mochilas</a>
+        <hr>
+        <a href="#cardquadro" class="collection-item" >Quadros</a>
+        <hr>
+        <a href="#cardfunko" class="collection-item" >Funkos</a>
+        <hr>
+        <a href="#cardmanga" class="collection-item" style="padding-left: 11px;" >Mangás</a>
+        <hr>
+      </div>
+      
+      <!-- ############# Inicio dos CARDS ##################### -->
+      <div id="cards">
+        <!-- ############# Inicio do CARD 1 ##################### -->
+      <div class="card" id="cardmochila">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg" >
+          <img class="activator" " src="img/mochila1.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2" style="text-align: left;">Mochila da Minnie</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Mochila da Minnie<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 1 ##################### -->
+
+
+
+      <!-- ############# Inicio do CARD 2 ##################### -->
+      <div class="card" id="cardmochila">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+          <img class="activator" style="margin-left: 30px;" src="img/mochila2.jpg" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2" style="text-align: left;">Mochila do Pokémon</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3" >Mochila do Pokémon<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+      
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+      
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 2 ##################### -->
+
+
+
+
+      <!-- ############# Inicio do CARD 3 ##################### -->
+      <div class="card" id="cardmochila" style="padding-right:30px ;">
+        <div class="card-image waves-effect waves-block waves-light" id="cardimg">
+          <img class="activator" style="width: 289px; height: 200px;" src="img/mochila3.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;" ><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2">Mochila Liga da Justiça</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Mochila da Liga da Justiça<i class="material-icons right">close</i></span><br/>
+          <p id="letra4">Tecido: Poliéster</p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 94,99</p>
+        <p id="desconto"><b>R$ 79,99</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+      <!-- ############# Fim do CARD 3 ##################### -->
+
+
+
+      <!-- ############# Inicio do CARD 4 ##################### -->
+      <div class="card" id="cardquadro" style="padding-left:0px ;" >
+        <div class="card-image waves-effect waves-block waves-light" id="cardimg">
+          <img class="activator" src="img/quadro1.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2">Quadro do Harry Potter</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Quadro do Harry Potter<i class="material-icons right">close</i></span><br/>
+          <p id="letra4"></p>
+          <p id="letra5"> </p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+          <p id="preço">R$ 49,99</p>
+          <p id="desconto"><b>R$ 40,00</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+ <!-- ############# Fim do CARD 4 ##################### -->
+
+
+
+<!-- ############# Inicio do CARD 5 ##################### -->
+      <div class="card" id="cardquadro" style="margin-left: 4px;">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+          <img class="activator"  src="img/quadro2.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2">Quadro do Dragon Ball Z</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Quadro do Dragon Ball Z<i class="material-icons right">close</i></span><br/>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+          <p id="preço">R$ 49,99</p>
+          <p id="desconto"><b>R$ 40,00</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+<!-- ############# Fim do CARD 5 ##################### -->
+
+
+
+
+<!-- ############# Inicio do CARD 6 ##################### -->
+      <div class="card" id="cardquadro">
+        <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+          <img class="activator" src="img/quadro3.png" >
+        </div>
+        <div class="card-content" >
+          <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+          <p id="letra2" style="text-align: left;">Quadro do Naruto</p>
+        </div>
+        <div class="card-reveal" style="background-color: grey;">
+          <span class="card-title grey-text text-darken-4" id="letra3">Quadro do Naruto<i class="material-icons right">close</i></span><br/>
+          <p id="letra4"></p>
+          <p id="letra5"></p>
+          <p id="letra6">Status: Disponível </p><br/>
+         
+           <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+          
+
+        </div>
+        <div style="text-align: left; margin-left: 25px;">
+        <p id="preço">R$ 49,99</p>
+        <p id="desconto"><b>R$ 40,00</b></p>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Confirmação de Compra</h4>
+          <p>Deseja realizar a compra desse produto ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+          <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+        </div>
+      </div> 
+<!-- #############  Fim do CARD 6 ##################### -->
+
+
+
+<!-- ############# Inicio do CARD 7 ##################### -->
+<div class="card" id="cardfunko">
+  <div class="card-image waves-effect waves-block waves-light" id="cardimg">
+    <img class="activator" style="width: 193px; height: auto;"  src="img/funko1.png" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;" ><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2" style="text-align: left;" >Funko da Lux</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Funko da Lux<i class="material-icons right">close</i></span><br/>
+    <p id="letra5">Tamanho: Pequeno </p>
+    <p id="letra5">Jogo: League of Legends</p>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+    <p id="preço">R$ 70,90</p>
+    <p id="desconto"><b>R$ 59,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- ############# Fim do CARD 7 ##################### -->
+
+
+
+
+<!-- ############# Inicio do CARD 8 ##################### -->
+<div class="card" id="cardF" style="padding-right: 100px; margin-left: 47px;">
+  <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+    <img class="activator" src="img/funko2.png" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2">Funko do Ken</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Funko do Ken<i class="material-icons right">close</i></span><br/>
+    <p id="letra5">Tamanho: Pequeno </p>
+    <p id="letra5">Jogo: Street Fighter</p>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+  <p id="preço">R$ 70,90</p>
+  <p id="desconto"><b>R$ 59,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- #############  Fim do CARD 8 ##################### -->
+
+
+
+<!-- ############# Inicio do CARD 9 ##################### -->
+<div class="card" id="cardfunko">
+  <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+    <img class="activator" src="img/funko3.jpg" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2">Funko do All Might</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Funko do All Might<i class="material-icons right">close</i></span><br/>
+    <p id="letra5">Tamanho: Pequeno </p>
+    <p id="letra5">Anime: My Hero Academia </p>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+    <p id="preço">R$ 70,90</p>
+    <p id="desconto"><b>R$ 59,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- ############# Fim do CARD 9 ##################### -->
+
+
+
+
+<!-- ############# Inicio do CARD 10 ##################### -->
+<div class="card" id="cardmanga">
+  <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+    <img class="activator" src="img/manga1.png" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2">Mangá Cavaleiros do</p>
+    <p id="letra2">Zodíaco</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Mangá do Cavaleiros do Zodíaco<i class="material-icons right">close</i></span><br/>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+    <p id="preço">R$ 49,99</p>
+    <p id="desconto"><b>R$ 34,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- #############  Fim do CARD 10 ##################### -->
+
+
+
+<!-- ############# Inicio do CARD 11 ##################### -->
+<div class="card" id="cardmanga">
+  <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+    <img class="activator" src="img/manga2.png" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2">Mangá No Game</p>
+    <p id="letra2">No Life</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Mangá No Game No Life<i class="material-icons right">close</i></span><br/>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+    <p id="preço">R$ 49,99</p>
+    <p id="desconto"><b>R$ 34,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- ############# Fim do CARD 11 ##################### -->
+
+
+
+
+<!-- ############# Inicio do CARD 12 ##################### -->
+<div class="card" id="cardmanga" >
+  <div class="card-image waves-effect waves-block waves-light"  id="cardimg">
+    <img class="activator" src="img/manga3.png" >
+  </div>
+  <div class="card-content" >
+    <span class="card-title activator" style="text-align: left;"><a href="diversos.html" id="letra">Classe Nerd</a><i class="material-icons right" style="color: black;">more_vert</i></span>
+    <p id="letra2">Mangá Katekyo Hitman</p>
+    <p id="letra2">Reborn</p>
+  </div>
+  <div class="card-reveal" style="background-color: grey;">
+    <span class="card-title grey-text text-darken-4" id="letra3">Mangá Katekyo Hitman Reborn<i class="material-icons right">close</i></span><br/>
+    <p id="letra6">Status: Disponível </p><br/>
+   
+     <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Comprar</a>
+    
+
+  </div>
+  <div style="text-align: left; margin-left: 25px;">
+  <p id="preço">R$ 49,99</p>
+  <p id="desconto"><b>R$ 34,99</b></p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Confirmação de Compra</h4>
+    <p>Deseja realizar a compra desse produto ?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" style="margin-right: 10px;">Não</button>
+    <button type="button" class="modal-close waves-effect waves-green btn-flat" onclick="alerta()">Sim</button>
+  </div>
+</div> 
+<!-- #############  Fim do CARD 12 ##################### -->
+
+    </div>
+     <!-- ############# Fim dos CARDS ##################### -->
+
+    </main>
 
     <footer class="page-footer" id="footer">
       <div class="container">
@@ -65,7 +578,6 @@
             <h5 class="white-text">Categorias</h5>
             <ul>
               <li>
-
                 <a class="grey-text text-lighten-3" href="camisetas.html"
                   >Camisetas</a
                 >
@@ -86,12 +598,14 @@
                 >
             </ul>
           </div>
+
           <div class="col l4 s12" id="contato">
             <h5>Contato</h5>
             <p>WhatsApp: (11) 97788 - 2000</p>
             <p>Telefone: 2519 - 4062</p>
             <a href="mailto:contato@classenerd.com.br"> contato@classenerd.com.br</a>
           </div>
+
           <div class="col l4 s12" id="redes">
             <h5>Redes Sociais</h5>
             <ul>
@@ -117,11 +631,6 @@
       </div>
     </footer>
 
-    </div>
-    </footer>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
@@ -135,5 +644,12 @@
         $(".sidenav").sidenav();
       });
     </script>
+
+    <script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+    </script>
   </body>
 </html>
+
