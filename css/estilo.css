@@ -115,9 +115,9 @@ nav div img {
   box-shadow: 0 0 0 0 transparent;
   border: none;
   width: auto;
-  padding-right:38.9px;
-  padding-left:50px;
-  padding-bottom:30px;
+  padding-right: 38.9px;
+  padding-left: 50px;
+  padding-bottom: 30px;
 }
 
 #cardF {
@@ -125,9 +125,9 @@ nav div img {
   box-shadow: 0 0 0 0 transparent;
   border: none;
   width: auto;
-  padding-right:38.9px;
-  padding-left:50px;
-  padding-bottom:30px;
+  padding-right: 38.9px;
+  padding-left: 50px;
+  padding-bottom: 30px;
   padding-top: 10px;
 }
 
@@ -176,47 +176,51 @@ nav div img {
   font-family: "Montserrat", sans-serif;
 }
 
-#cards{
-text-align: center;
-width: auto; 
-margin-left: 100px;
-
+#cards {
+  text-align: center;
+  width: auto;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
 #cardimg img {
   width: auto;
   height: 200px;
-
 }
 
-#letrafiltro{
+#letrafiltro {
   font-weight: bold;
   margin-left: 24px;
-  padding-bottom:10px ;
+  padding-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;
 }
 
-hr{
-  border-color:black;
+hr {
+  border-color: black;
 }
 
-#filtro{
-  position:fixed; 
-  width: 101px; 
-  margin-left: 5px; 
-  border-left: 2px solid black; 
+#filtro {
+  position: fixed;
+  width: 100px;
+  margin-top: 70px;
+  margin-left: 20px;
+  color: black;
+  border-left: 2px solid black;
   border-right: 2px solid black;
 }
 
-#filtro a{
-  color: black;
-  font-family: arial;
-  font-size: 12pt;
-  padding-left: 9px;
-  font-family: "Montserrat", sans-serif;
+#caixaM {
+  background-color: rgb(63, 111, 201);
 }
 
+#caixaF {
+  background-color: rgb(235, 35, 191);
+}
 
-
-
+#filtro a {
+  color: black;
+  font-size: 12pt;
+  padding-left: 9px;
+  font-family: "Varela Round", sans-serif;
+}
