@@ -149,11 +149,13 @@ nav div img {
 
 #desconto {
   font-size: 15pt;
+  text-align: left;
 }
 
 #preço {
   color: #898b9c;
   text-decoration: line-through;
+  text-align: left;
 }
 
 #letra {
@@ -203,10 +205,11 @@ margin-top: 70px;
 
 #letrafiltro{
   font-weight: bold;
-  margin-left: 24px;
   padding-bottom:10px ;
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;
+
+
 }
 
 hr{
@@ -219,6 +222,7 @@ hr{
   margin-left: 5px; 
   border-left: 2px solid black; 
   border-right: 2px solid black;
+  text-align: center;
 }
 
 #filtro a{
