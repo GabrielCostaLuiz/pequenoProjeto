@@ -27,7 +27,6 @@ main {
 
 nav div {
   padding-bottom: 79px;
-  /* padding-top: ; */
 }
 
 nav div img {
@@ -244,4 +243,10 @@ hr {
 div img {
   width: 100%;
   height: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25pt;
+  font-family: "Varela Round", sans-serif;
 }

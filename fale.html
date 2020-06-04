@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classe Nerd</title>
@@ -12,112 +13,154 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
     <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
     <link rel="stylesheet" href="css/estilo.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <!-- ########## Início da barra de navegação ########## -->
-      <nav>
-        <div class="nav-wrapper black">
-          <a href="index.html" class="brand-logo center" id="logo"
-            ><img src="img/logo3.png" alt="logo"
-          /></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="camisetas.html">Camisetas</a></li>
-            <li><a href="diversos.html">Diversos</a></li>
-          </ul>
-          <ul id="nav-mobile2" class="right hide-on-med-and-down">
-            <li><a href="misterioso.html">Pacote Misterioso</a></li>
-            <li><a href="fale.html">Fale Conosco</a></li>
-          </ul>
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="camisetas.html">Camisetas</a></li>
-            <li><a href="diversos.html">Diversos</a></li>
-            <li><a href="misterioso.html">Pacote Misterioso</a></li>
-            <li><a href="fale.html">Fale Conosco</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- ########## Fim da barra de navegação ########## -->
+        <!-- ########## Início da barra de navegação ########## -->
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="index.html" class="brand-logo center" id="logo"><img src="img/logo3.png" alt="logo" /></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="camisetas.html">Camisetas</a></li>
+                    <li><a href="diversos.html">Diversos</a></li>
+                </ul>
+                <ul id="nav-mobile2" class="right hide-on-med-and-down">
+                    <li><a href="misterioso.html">Pacote Misterioso</a></li>
+                    <li><a href="fale.html">Fale Conosco</a></li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="camisetas.html">Camisetas</a></li>
+                    <li><a href="diversos.html">Diversos</a></li>
+                    <li><a href="misterioso.html">Pacote Misterioso</a></li>
+                    <li><a href="fale.html">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ########## Fim da barra de navegação ########## -->
 
-      <!-- ########## Início do carousel ########## -->
+        <!-- ########## Início do carousel ########## -->
 
-      <!-- ########## Fim do carousel ########## -->
+        <!-- ########## Fim do carousel ########## -->
     </header>
 
-    <main></main>
+    <main id="mainFale">
+        <h2><i>Suporte ao Consumidor - Classe Nerd</i></h2>
+
+        <!-- ########### Início do formulário ########### -->
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Nome Completo" id="nomeCompleto" type="text" class="validate" />
+                        <label for="icon_prefix">Nome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">email</i>
+                        <input placeholder="exemplo@dominio.com" id="email" type="email" class="validate" />
+                        <label for="icon_prefix">Email</label>
+                        <span class="helper-text" data-error="Digite o email corretamente" data-success="Email Correto"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">keyboard</i>
+                        <input placeholder="Digite os 7 números do pedido" id="numPedido" type="text" class="validate" data-length="7">
+                        <label for="icon_prefix">Número do Pedido</label>
+                    </div>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">subject</i>
+                    <select multiple>
+                        <option value="elogio">Elogio</option>
+                        <option value="critica">Crítica</option>
+                        <option value="problemaSite">Erro no site</option>
+                        <option value="finalizarComprar">Problemas na compra</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label for="icon_prefix">Assunto</label>
+                </div>
+            </form>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea placeholder="Digite a sua mensagem" id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Mensagem</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+
+
+
+    </main>
 
     <footer class="page-footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l4 s12" id="categoria">
-            <h5 class="white-text">Categorias</h5>
-            <ul>
-              <li>
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12" id="categoria">
+                    <h5 class="white-text">Categorias</h5>
+                    <ul>
+                        <li>
 
-                <a class="grey-text text-lighten-3" href="camisetas.html"
-                  >Camisetas</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3" href="diversos.html"
-                  >Diversos</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3" href="misterioso.html"
-                  >Pacote Misterioso</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3" href="fale.html"
-                  >Fale Conosco</a
-                >
-            </ul>
-          </div>
-          <div class="col l4 s12" id="contato">
-            <h5>Contato</h5>
-            <p>WhatsApp: (11) 97788 - 2000</p>
-            <p>Telefone: 2519 - 4062</p>
-            <a href="mailto:contato@classenerd.com.br"> contato@classenerd.com.br</a>
-          </div>
-          <div class="col l4 s12" id="redes">
-            <h5>Redes Sociais</h5>
-            <ul>
-              <li>
-                <a href="http://www.facebook.com" target="_blank">
-                  <img src="img/facebook.png" alt="Rede social facebok" />
-                </a>
-              </li>
-              <li>
-                <a href="http://www.twitter.com" target="_blank">
-                  <img src="img/twitter.png" alt="Rede social twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="http://www.instagram.com" target="_blank">
-                  <img src="img/instagram.png" alt="Rede social instagram" />
-                </a>
-              </li>
-            </ul>
-          </div>
+                            <a class="grey-text text-lighten-3" href="camisetas.html">Camisetas</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="diversos.html">Diversos</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="misterioso.html">Pacote Misterioso</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="fale.html">Fale Conosco</a>
+                    </ul>
+                </div>
+                <div class="col l4 s12" id="contato">
+                    <h5>Contato</h5>
+                    <p>WhatsApp: (11) 97788 - 2000</p>
+                    <p>Telefone: 2519 - 4062</p>
+                    <a href="mailto:contato@classenerd.com.br"> contato@classenerd.com.br</a>
+                </div>
+                <div class="col l4 s12" id="redes">
+                    <h5>Redes Sociais</h5>
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com" target="_blank">
+                                <img src="img/facebook.png" alt="Rede social facebok" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com" target="_blank">
+                                <img src="img/twitter.png" alt="Rede social twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" target="_blank">
+                                <img src="img/instagram.png" alt="Rede social instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
+        </div>
     </footer>
 
     </div>
@@ -134,11 +177,16 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-      });
+        $(document).ready(function () {
+            $(".sidenav").sidenav();
+        });
     </script>
-  </body>
+
+    <script>
+        $(document).ready(function () {
+                $('select').formSelect();
+            });
+    </script>
+</body>
+
 </html>
-
-
