@@ -251,6 +251,15 @@ h2 {
   font-family: "Varela Round", sans-serif;
 }
 
-#formulario{
-  margin-left: 500px;
+#formulario {
+  margin-top: 50px;
+  margin-left: 390px;
+}
+
+::placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+#imgHome {
+  background-image: url("../img/fundoFale2.jpg");
 }
