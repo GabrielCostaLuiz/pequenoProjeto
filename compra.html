@@ -59,7 +59,7 @@
 
         <!-- ########### Início do formulário ########### -->
         <div class="row" id="formulario">
-            <form class="col s12" >
+            <form action="confirmacaoCompra.html" class="col s12" >
                 <div class="row" >
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
@@ -78,8 +78,9 @@
                 <div class="row" >
                     <div class="input-field col s4">
                         <i class="material-icons prefix">phone</i>
-                        <input placeholder="(xx) xxxxx-xxxx" id="icon_telephone" type="tel" class="validate">
+                        <input placeholder="(xx) xxxxx-xxxx" id="icon_telephone" type="tel" class="validate" data-length="11" minlength="11">
                         <label for="icon_telephone">Telefone</label>
+                        <span class="helper-text" data-error="Número incorreto"></span>
                       </div>
                     </div>
 
@@ -97,9 +98,9 @@
                 <div class="row" >
                     <div class="input-field col s4">
                         <i class="material-icons prefix">credit_card</i>
-                        <input placeholder="Nº Cartão"  type="tel" class="validate">
-                        <input placeholder="Senha"  type="tel" class="validate">
-                        <input placeholder="Validade"  type="tel" class="validate">
+                        <input placeholder="Nº Cartão"  type="tel" class="validate" minlength="16">
+                        <input placeholder="Senha"  type="tel" class="validate" minlength="4" maxlength="8" >
+                        <input placeholder="Validade"  type="tel" class="validate" minlength="7" maxlength="10">
                         <label for="icon_telephone">Pagamento em Cartão</label>
                       </div>
                     </div>
@@ -119,10 +120,11 @@
                             <label for="icon_prefix">Endereço</label>
                         </div>
                     </div>
-
+            <a href="confirmacao.html">        
             <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
                 <i class="material-icons right" >send</i>
             </button>
+            </a>
         </div>
         
 
