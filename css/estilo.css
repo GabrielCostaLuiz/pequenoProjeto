@@ -259,3 +259,17 @@ h2 {
 ::placeholder {
   font-family: "Varela Round", sans-serif;
 }
+
+#imgHome {
+  background-image: url("../img/fundoHome.jpg");
+}
+
+#letraConfirmacao {
+  text-align: center;
+}
+
+p img {
+  width: 25%;
+  height: auto;
+  margin-left: 400px;
+}
