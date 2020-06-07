@@ -274,25 +274,10 @@ p img {
   margin-left: 400px;
 }
 
-#titulo1 {
-  text-align: center;
-  padding-top: 20px;
+#mainMisterio {
+  background-image: url("../img/fundoInterrogacao.jpg");
 }
 
-#titulo2 {
-  text-align: center;
-  margin-top: 40px;
-}
-
-#misterioImg1 {
-  width: auto;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: 520px;
-}
-
-#misterioImg2 {
-  width: auto;
-  height: 300px;
-  margin-left: 430px;
+#carouselMisterio {
+  margin-top: 100px;
 }
