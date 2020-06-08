@@ -59,7 +59,25 @@
       <!-- ########## Fim do carousel ########## -->
     </header>
 
-    <main></main>
+    <main id="mainInfinito">
+      <h2 style="color: white">Infinity</h2>
+      <p style="color:white; font-family: Varela Round, sans-serif; text-align: center;">Seu poder imenso e destrutivo vem dos céus. Equipe-se com o conjunto Infinity.</p>
+    
+      <div id="carouselInfinito" class="carousel">
+        <a class="carousel-item" href="#"><img src="img/bonecoInfinito.jpg"></a>
+        <a class="carousel-item" href="#"><img src="img/camisaInfinito.jpg"></a>
+        <a class="carousel-item" href="#"><img src="img/camisaInfinito2.jpg"></a>
+      </div>
+    
+      <a href="compra.html">
+        <button id="botao" style="margin-top: 25px;" class="btn waves-effect waves-light" type="submit"
+          name="action">Comprar</button>
+      </a>
+    
+    
+    
+    
+    </main>
 
     <footer class="page-footer" id="footer">
       <div class="container">
@@ -136,6 +154,13 @@
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+      });
+    </script>
+
+    <!-- Carousel misterioso.html -->
+    <script>
+      $(document).ready(function () {
+        $('.carousel').carousel();
       });
     </script>
   </body>

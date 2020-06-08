@@ -294,6 +294,10 @@ p img {
   background-image: url("../img/fundoBruxa.jpg");
 }
 
+#mainInfinito {
+  background-image: url("../img/fundoInfinito.jpg");
+}
+
 #botao {
   margin-left: 590px;
 }
