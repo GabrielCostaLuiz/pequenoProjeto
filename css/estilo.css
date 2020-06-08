@@ -281,3 +281,19 @@ p img {
 #carouselMisterio {
   margin-top: 100px;
 }
+
+#mainMagia {
+  background-image: url("../img/fundoMagia.jpg");
+}
+
+#mainPoder {
+  background-image: url("../img/fundoPoder.jpg");
+}
+
+#mainBruxa {
+  background-image: url("../img/fundoBruxa.jpg");
+}
+
+#botao {
+  margin-left: 590px;
+}

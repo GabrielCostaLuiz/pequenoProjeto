@@ -59,7 +59,26 @@
       <!-- ########## Fim do carousel ########## -->
     </header>
 
-    <main></main>
+    <main id="mainMagia">
+        <h2 style="color: white">Magia Arcana</h2>
+        <p>Você escolheu o caminho dos Magos Arcanos. Desfruta de um poder incrivel, porém moderado.
+            Equipe o seu traje.
+        </p>
+
+        <div id="carouselMagia" class="carousel">
+        <a class="carousel-item" href="#"><img src="img/chapeu.jpg"></a>
+        <a class="carousel-item" href="#"><img src="img/roupaMago.jpg"></a>
+        <a class="carousel-item" href="#"><img src="img/livroArcano.jpg"></a>
+      </div>
+
+    <a href="compra.html">
+    <button id="botao" class="btn waves-effect waves-light" type="submit" name="action">Comprar</button>
+    </a>
+
+
+
+
+    </main>
 
     <footer class="page-footer" id="footer">
       <div class="container">
@@ -137,6 +156,13 @@
       $(document).ready(function () {
         $(".sidenav").sidenav();
       });
+    </script>
+
+    <!-- Carousel misterioso.html -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
     </script>
   </body>
 </html>
