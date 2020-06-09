@@ -301,3 +301,17 @@ p img {
 #botao {
   margin-left: 590px;
 }
+
+#texto {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  line-height: 27px;
+  margin-bottom: 30px;
+  font-family: "Arial";
+  color: white;
+}
+
+#h2Index {
+  color: white;
+}
